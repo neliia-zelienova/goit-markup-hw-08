@@ -1,0 +1,10 @@
+.logo {
+  color: $primary-text-color;
+  font-family: Raleway;
+  @include fonts(500, 26px, 1.19, 0.03em);
+  margin-right: 85px;
+
+  &-web-part {
+    color: $accent-color;
+  }
+}

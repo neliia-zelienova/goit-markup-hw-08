@@ -1,0 +1,20 @@
+.button {
+  color: $primary-bg-color;
+  background-color: $accent-color;
+  @include fonts(700, 16px, 1.88, 0.06em);
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  cursor: pointer;
+
+  &:active,
+  &:enabled {
+    outline: none;
+  }
+}

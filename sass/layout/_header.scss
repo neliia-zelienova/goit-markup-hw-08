@@ -1,0 +1,99 @@
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+
+  .nav-item {
+    .link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      color: $primary-text-color;
+      @extend %header-link-text;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+
+      &.current {
+        position: relative;
+      }
+
+      &.current::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: 4px;
+        width: 100%;
+        background-color: $accent-color;
+        border-radius: 2px;
+        transform: scaleX(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &.current:hover::after,
+      &.current:focus::after {
+        transform: scaleX(0.5);
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.link-cont {
+  display: inline;
+}
+
+.link-icon {
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  cursor: pointer;
+  fill: $description-text-color;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $description-text-color;
+    @extend %header-link-text;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    &:hover .link-icon,
+    &:focus .link-icon {
+      fill: $accent-color;
+    }
+  }
+}

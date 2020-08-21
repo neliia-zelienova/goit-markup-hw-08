@@ -1,0 +1,37 @@
+.clients {
+  &.section {
+    margin-bottom: 94px;
+  }
+  .list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.client-logo {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  .company-icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link {
+    @extend %display-center;
+    width: 170px;
+    height: 90px;
+    border-width: 1px;
+    border-color: #afb1b8;
+    border-style: solid;
+    border-radius: 4px 4px 4px 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .company-icon,
+    &:focus .company-icon {
+      fill: $accent-color;
+    }
+    &:hover {
+      border-color: $accent-color;
+    }
+  }
+}

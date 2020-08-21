@@ -1,0 +1,39 @@
+.social-nw.list {
+  display: flex;
+  justify-content: center;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .item {
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .social-nw-link {
+    @extend %display-center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+
+    .nw-icon {
+      display: block;
+      cursor: pointer;
+      fill: #afb1b8;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .nw-icon,
+    &:focus .nw-icon {
+      fill: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.about-us {
+  margin-bottom: 94px;
+  &.section .section-title {
+    display: none;
+  }
+  &.list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-us-item {
+  width: calc(100% - 90px / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-size: 70px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .headline {
+    @include fonts(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &.icon-details::before {
+    background-image: url("../images/about-us/antenna.svg");
+  }
+
+  &.icon-punctuality::before {
+    background-image: url("../images/about-us/clock.svg");
+  }
+
+  &.icon-planning::before {
+    background-image: url("../images/about-us/diagram.svg");
+  }
+  &.icon-up-to-date::before {
+    background-image: url("../images/about-us/astronaut.svg");
+  }
+  .description {
+    @include fonts(400, 14px, 1.71, 0.03em);
+    color: $description-text-color;
+  }
+}

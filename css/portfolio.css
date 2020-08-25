@@ -138,18 +138,35 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal .headline {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal .headline {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .close-icon {
@@ -184,7 +201,7 @@ h1 {
 }
 
 .modal-form .form-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   background: transparent;
@@ -198,6 +215,12 @@ h1 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form .form-input {
+    width: 448px;
+  }
+}
+
 .modal-form .form-input:focus {
   border-color: #2196f3;
   outline: none;
@@ -205,6 +228,11 @@ h1 {
 
 .modal-form .form-input:not(:placeholder-shown) ~ .form-lable {
   transform: translate(-43px, -43px);
+}
+
+.modal-form .button {
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .form-comment {
@@ -281,10 +309,19 @@ h1 {
 
 .agree-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.667;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .agree-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .agree-text > a {

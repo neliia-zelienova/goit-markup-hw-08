@@ -1,5 +1,8 @@
 .portfolio.header {
-  margin-bottom: 93px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 93px;
+  }
 }
 
 .container .page-name {
@@ -9,8 +12,18 @@
 .filters {
   &.list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      :nth-child(-n + 3) {
+        padding-bottom: 15px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 50px;
+    }
   }
   .item:not(:last-child) {
     margin-right: 8px;
@@ -43,24 +56,51 @@
 
 .projects {
   &.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 94px;
+    }
 
     .description {
-      width: calc((100% - 60px) / 3);
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+      }
 
       &:hover {
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
           0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
       }
 
-      &:not(:nth-child(3n)) {
-        margin-right: 30px;
+      @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
       }
 
-      &:not(:nth-last-child(-n + 3)) {
-        margin-bottom: 30px;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:nth-child(2n + 1) {
+          margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n + 3)) {
+          margin-bottom: 30px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        &:not(:nth-child(3n)) {
+          margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n + 3)) {
+          margin-bottom: 30px;
+        }
       }
     }
   }

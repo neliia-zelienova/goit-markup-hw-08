@@ -1,7 +1,7 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -14,6 +14,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    margin-bottom: 94px;
   }
 
   @media screen and (min-width: 1200px) {

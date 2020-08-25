@@ -1,19 +1,46 @@
 .about-us {
-  margin-bottom: 94px;
   &.section .section-title {
     display: none;
   }
+
   &.list {
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }
 
 .about-us-item {
-  width: calc(100% - 90px / 4);
+  @media screen and (max-width: 767px) {
+    width: 100%;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &::before {
@@ -29,7 +56,15 @@
   }
 
   .headline {
-    @include fonts(700, 14px, 1.14, 0.03em);
+    @include fonts(700, 14px, 0.875, 0.03em);
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include fonts(700, 14px, 1.14, 0.03em);
+    }
 
     text-transform: uppercase;
     margin-bottom: 10px;

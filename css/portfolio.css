@@ -476,6 +476,10 @@ h1 {
   }
 }
 
+.menu-container {
+  z-index: 100;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     position: absolute;
@@ -653,6 +657,7 @@ h1 {
 
 .portfolio.header {
   margin-bottom: 60px;
+  border-bottom: solid 1px #ececec;
 }
 
 @media screen and (min-width: 1200px) {

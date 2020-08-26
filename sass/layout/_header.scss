@@ -49,6 +49,7 @@
 }
 
 .menu-container {
+  z-index: 100;
   @media screen and (max-width: 767px) {
     position: absolute;
     display: none;

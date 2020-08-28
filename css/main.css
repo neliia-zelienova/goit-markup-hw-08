@@ -67,6 +67,12 @@ h1 {
   text-decoration: none;
 }
 
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;

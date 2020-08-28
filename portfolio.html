@@ -26,8 +26,9 @@
             aria-expanded="false"
           >
             <svg
-              width="40px"
-              height="40px"
+              width="19px"
+              height="19px"
+              class="mobile-menu-trigger"
               aria-label="Переключатель мобильного меню"
             >
               <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
@@ -97,11 +98,30 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/technokryack.jpg"
-                  alt="Ноутбук с открытым сайтом Технокряк"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/technokryack/technokryack-mobile.jpg    1x,
+                      ./images/portfolio/technokryack/technokryack-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/technokryack/technokryack-desktop.jpg    1x,
+                      ./images/portfolio/technokryack/technokryack-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/technokryack/technokryack-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/technokryack/technokryack-tablet.jpg"
+                    alt="Ноутбук с открытым сайтом Технокряк"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -119,11 +139,31 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/new-orlean-vs-golden-star.jpg"
-                  alt="Постер"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/new-orlean-vs-golden-star/poster-mobile.jpg    1x,
+                      ./images/portfolio/new-orlean-vs-golden-star/poster-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/new-orlean-vs-golden-star/poster-desktop.jpg    1x,
+                      ./images/portfolio/new-orlean-vs-golden-star/poster-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/new-orlean-vs-golden-star/poster-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/new-orlean-vs-golden-star/poster-tablet.jpg"
+                    alt="Постер"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -143,11 +183,31 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/sea-food-restaurant.jpg"
-                  alt="Эмблема ресторана"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/sea-food-restaurant/sea-food-mobile.jpg    1x,
+                      ./images/portfolio/sea-food-restaurant/sea-food-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/sea-food-restaurant/sea-food-desktop.jpg    1x,
+                      ./images/portfolio/sea-food-restaurant/sea-food-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/sea-food-restaurant/sea-food-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/sea-food-restaurant/sea-food-tablet.jpg"
+                    alt="Эмблема ресторана"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -167,11 +227,30 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/prime-project.jpg"
-                  alt="Наушники"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/prime-project/prime-mobile.jpg    1x,
+                      ./images/portfolio/prime-project/prime-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/prime-project/prime-desktop.jpg    1x,
+                      ./images/portfolio/prime-project/prime-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/prime-project/prime-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/prime-project/prime-tablet.jpg"
+                    alt="Эмблема проекта"
+                  />
+                </picture>
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -191,11 +270,31 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/boxes-project.jpg"
-                  alt="Коробки"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/boxes/boxes-project-mobile.jpg    1x,
+                      ./images/portfolio/boxes/boxes-project-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/boxes/boxes-project-desktop.jpg    1x,
+                      ./images/portfolio/boxes/boxes-project-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/boxes/boxes-project-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/boxes/boxes-project-tablet.jpg"
+                    alt="Коробки"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -215,11 +314,31 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/inspiration-has-no-borders.jpg"
-                  alt="Экран компьютера с открытым приложением"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/inspiration/inspiration-mobile.jpg    1x,
+                      ./images/portfolio/inspiration/inspiration-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/inspiration/inspiration-desktop.jpg    1x,
+                      ./images/portfolio/inspiration/inspiration-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/inspiration/inspiration-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/inspiration/inspiration-tablet.jpg"
+                    alt="Экран компьютера с открытым приложением"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -239,11 +358,31 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/limited-edition.jpg"
-                  alt="Открытый журнал"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/limited-edition/edition-mobile.jpg    1x,
+                      ./images/portfolio/limited-edition/edition-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/limited-edition/edition-desktop.jpg    1x,
+                      ./images/portfolio/limited-edition/edition-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/limited-edition/edition-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/limited-edition/edition-tablet.jpg"
+                    alt="Открытый журнал"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -263,11 +402,29 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/lab-project.jpg"
-                  alt="Эмблема проекта ЛАБ"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/lab/lab-mobile.jpg    1x,
+                      ./images/portfolio/lab/lab-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/lab/lab-desktop.jpg    1x,
+                      ./images/portfolio/lab/lab-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="./images/portfolio/lab/lab-tablet@2x.jpg 2x"
+                    src="./images/portfolio/lab/lab-tablet.jpg"
+                    alt="Эмблема проекта ЛАБ"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения
@@ -285,11 +442,31 @@
           <li class="description">
             <a class="projects-item link" href="">
               <div class="project-card">
-                <img
-                  class="image"
-                  src="./images/portfolio/groving-business.jpg"
-                  alt="Экран ноутбука с главной страницей Growing Business"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/groving-business/groving-business-mobile.jpg    1x,
+                      ./images/portfolio/groving-business/groving-business-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/groving-business/groving-business-desktop.jpg    1x,
+                      ./images/portfolio/groving-business/groving-business-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    srcset="
+                      ./images/portfolio/groving-business/groving-business-tablet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/groving-business/groving-business-tablet.jpg"
+                    alt="Экран ноутбука с главной страницей Growing Business"
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="text">
                     Технокряк это современная площадка распространения

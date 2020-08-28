@@ -41,12 +41,13 @@
     }
   }
 
-  .photo {
-    margin-bottom: 30px;
-  }
-
   .info {
     padding-bottom: 24px;
+  }
+
+  .photo {
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 

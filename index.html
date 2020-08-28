@@ -25,8 +25,9 @@
             aria-expanded="false"
           >
             <svg
-              width="40px"
-              height="40px"
+              width="19px"
+              height="19px"
+              class="mobile-menu-trigger"
               aria-label="Переключатель мобильного меню"
             >
               <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
@@ -169,14 +170,29 @@
           <ul class="team list">
             <li class="team-member">
               <div class="info">
-                <picture> </picture>
-                <img
-                  class="image photo"
-                  src="./images/team/nikolay-kyrchenko.jpg"
-                  alt="фото Николая Курченко"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/nikolay-kyrchenko-mobile.jpg    1x,
+                      ./images/team/nikolay-kyrchenko-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay-kyrchenko-desktop.jpg    1x,
+                      ./images/team/nikolay-kyrchenko-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image photo"
+                    src="./images/team/nikolay-kyrchenko-tablet.jpg"
+                    srcset="./images/team/nikolay-kyrchenko-tablet@2x.jpg 2x"
+                    alt="фото Николая Курченко"
+                  />
+                </picture>
+
                 <h3 class="name">Николай Кучеренко</h3>
                 <p class="position" lang="en">Product Designer</p>
                 <ul class="social-nw list">
@@ -235,13 +251,29 @@
             </li>
             <li class="team-member">
               <div class="info">
-                <img
-                  class="image photo"
-                  src="./images/team/olha-ivanova.jpg"
-                  alt="фото Ольги Ивановой"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/olha-ivanova-mobile.jpg    1x,
+                      ./images/team/olha-ivanova-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olha-ivanova-desktop.jpg    1x,
+                      ./images/team/olha-ivanova-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image photo"
+                    src="./images/team/olha-ivanova-tablet.jpg"
+                    srcset="./images/team/olha-ivanova-tablet@2x.jpg 2x"
+                    alt="фото Ольги Ивановой"
+                  />
+                </picture>
+
                 <h3 class="name">Ольга Иванова</h3>
                 <p class="position" lang="en">Frontend Developer</p>
                 <ul class="social-nw list">
@@ -300,13 +332,29 @@
             </li>
             <li class="team-member">
               <div class="info">
-                <img
-                  class="image photo"
-                  src="./images/team/andrey-shevchenko.jpg"
-                  alt="фото Андрея Шевченко"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/andrey-shevchenko-mobile.jpg    1x,
+                      ./images/team/andrey-shevchenko-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/andrey-shevchenko-desktop.jpg    1x,
+                      ./images/team/andrey-shevchenko-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image photo"
+                    src="./images/team/andrey-shevchenko-tablet.jpg"
+                    srcset="./images/team/andrey-shevchenko-tablet@2x.jpg 2x"
+                    alt="фото Андрея Шевченко"
+                  />
+                </picture>
+
                 <h3 class="name">Андрей Шевченко</h3>
                 <p class="position" lang="en">Marketing</p>
                 <ul class="social-nw list">
@@ -365,13 +413,30 @@
             </li>
             <li class="team-member">
               <div class="info">
-                <img
-                  class="image photo"
-                  src="./images/team/ivan-nickolaey.jpg"
-                  alt="фото Ивана Николаева"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/ivan-nickolaey-mobile.jpg    1x,
+                      ./images/team/ivan-nickolaey-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/ivan-nickolaey-desktop.jpg    1x,
+                      ./images/team/ivan-nickolaey-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image photo"
+                    src="./images/team/ivan-nickolaey-tablet.jpg"
+                    srcset="./images/team/ivan-nickolaey-tablet@2x.jpg 2x"
+                    alt="фото Ивана Николаева"
+                  />
+                </picture>
+
                 <h3 class="name">Иван Николаев</h3>
                 <p class="position" lang="en">UI Designer</p>
                 <ul class="social-nw list">

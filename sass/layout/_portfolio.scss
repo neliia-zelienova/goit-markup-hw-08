@@ -17,9 +17,6 @@
 
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
-      :nth-child(-n + 3) {
-        padding-bottom: 15px;
-      }
     }
     @media screen and (min-width: 768px) {
       justify-content: center;
@@ -28,6 +25,12 @@
   }
   .item:not(:last-child) {
     margin-right: 8px;
+
+    @media screen and (max-width: 767px) {
+      &:nth-child(-n + 3) {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
